@@ -1,12 +1,17 @@
 package Arrays;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class rotatearray
 {
-    static int arr[] = new int[]{1, 2, 3, 4, 5};
-    
-   
+    Scanner sc=new Scanner(System.in);
+    int n=sc.nextInt();
+    int[] arr=new int[n]
+
+    for(int i=0; i<n; i++){
+        arr[i]=sc.nextInt();
+}
+
     static void rotate()
     {
        int i = 0, j = arr.length - 1;
