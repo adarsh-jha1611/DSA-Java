@@ -14,10 +14,10 @@ public class Demo
 		int id,choice;
 		String name;
 		
-		Scanner scan = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 			
 		System.out.print("Enter initial size of table : ");
-		int size = scan.nextInt();
+		int size = sc.nextInt();
 			
 		HashTable table = new HashTable(size);
 		
@@ -39,9 +39,9 @@ public class Demo
 			{
 				case 1 : 
 				   System.out.print("Enter student id : ");
-				   id = scan.nextInt();
+				   id = sc.nextInt();
 				   System.out.print("Enter student name : ");
-				   name = scan.next();
+				   name = sc.next();
 				
 				   studentRecord aRecord = new studentRecord(id,name);
 				   
@@ -49,7 +49,7 @@ public class Demo
 				   break;
 				case 2 : 
 				   System.out.print("Enter a key to be searched : ");
-				   id = scan.nextInt();
+				   id = sc.nextInt();
 				   aRecord = table.Search(id); 
 				  				   
 				   if( aRecord==null )
@@ -69,6 +69,6 @@ public class Demo
 				
 			}
 		}
-		scan.close();
+		sc.close();
 	}
 }
