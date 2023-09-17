@@ -1,14 +1,9 @@
-/*
-Copyright (C) Deepali Srivastava - All Rights Reserved
-This code is part of DSA course available on CourseGalaxy.com    
-*/
-
 import java.util.Scanner;
 
 
 public class Display1toN 
 {
-	public static void print1(int n)
+	public static void print1function(int n)
 	{
 		if(n==0)
 		   return;
@@ -16,7 +11,7 @@ public class Display1toN
 		print1(n-1);
 	}
 
-	public static void print2(int n)
+	public static void print2function(int n)
 	{
 		if(n==0)
 		   return;
@@ -31,10 +26,10 @@ public class Display1toN
 		System.out.println("Enter value of n : ");
 		n = scan.nextInt();
 		
-		print1(n);	
+		print1function(n);	
 		System.out.println();
 		
-		print2(n);	
+		print2function(n);	
 		System.out.println();
 		
 		scan.close();
